@@ -1,0 +1,5 @@
+import mongoose from "mongoose";
+
+export const connectDB =async()=>{
+    await mongoose.connect('mongodb+srv://medhanshpurwar2022:minkupurwar@cluster0.rxepdh1.mongodb.net/EDUSITY').then(()=>console.log("DB Connected"));
+}
